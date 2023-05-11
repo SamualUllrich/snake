@@ -1,16 +1,31 @@
-# This is a sample Python script.
+# This is a simple snake game for Selenium testing
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import random
+import time
+import turtle # pip install turtle
+#The turtle module provides turtle graphics primitives, in both object-oriented and procedure-oriented ways.
 
+#create screen using turtle
+screen = turtle.Screen()
+screen.title('SNAKE GAME')
+screen.setup(width = 700, height = 700)
+screen.tracer(0)
+turtle.bgcolor('green')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+#creating a border inside the frame for the game to live
+turtle.speed(5)
+turtle.pensize(4)
+turtle.penup()
+turtle.goto(-310,250)
+turtle.pendown()
+turtle.color('black')
+turtle.forward(600)
+turtle.right(90)
+turtle.forward(500)
+turtle.right(90)
+turtle.forward(600)
+turtle.right(90)
+turtle.forward(500)
+turtle.penup()
+turtle.hideturtle()
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
